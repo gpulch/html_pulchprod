@@ -1,0 +1,215 @@
+/* fonts */
+
+@font-face {
+	font-family: "San Francisco";
+	font-weight: 4000;
+	src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+
+
+/* main page settings */
+
+/* Smooth scrolling on the whole document */
+html {
+	scroll-behavior: smooth;
+	overflow: scroll;
+	scroll-snap-type: y mandatory;
+
+}
+
+#full_page
+{
+	font-family:'San Francisco', Arial;
+	font-weight: bold;
+}
+
+
+.container, html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.column {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+
+	scroll-snap-align: start;
+
+}
+
+.column1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	background-color: black;
+	height: 100vh;
+	color: whitesmoke;
+}
+.column2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	background-color: whitesmoke;
+	height: 100vh;
+	color: darkgray;
+}
+
+.see_desc {
+	display: flex;
+	padding-bottom: 22px;
+
+}
+
+#HI h1 {
+	transition: transform 2s;
+
+}
+#HI h1:hover {
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+
+}
+
+body h1
+{
+	font-family: 'San Francisco', Arial;
+	font-weight: bold;
+	font-size: 3em;
+	color:  whitesmoke;
+	background-color: black;
+}
+
+
+body p
+{
+	color: darkgray;
+	font-size: 2em;
+}
+
+
+/* footer design */
+
+footer {
+	margin: 20px;
+	padding-bottom: 20px;
+	text-align: right;
+}
+
+
+
+#topsection {
+	font-family:'San Francisco', Arial;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	position: fixed;
+	width: 100vw;
+	background-color: whitesmoke;
+
+}
+
+/* contact */
+
+#contact
+{
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin-right: 30px;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+	order: 2;
+}
+
+#contact a:hover
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+#contact a {
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+
+/* Navigation */
+
+
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	order: 1;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a
+{
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #760001;
+	border-bottom: 3px solid #760001;
+}
+
+/* figures images */
+
+section img:hover
+{
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2);
+}
+
+section img {
+	max-height: 100px;
+	justify-items: center;
+	margin: 35px;
+	transition: transform 0.3s;
+}
+
+.figure {
+	display: flex;
+	height: auto;
+	/* Magic! */
+	max-width: 50vw;
+}
+
+
+
+@media screen and (max-width: 1280px)
+{
+	#topsection
+	{
+		background-color: green;
+		width: 100vw;
+	}
+
+}
