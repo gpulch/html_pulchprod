@@ -42,7 +42,7 @@ then rows with black and white columns for each section.*/
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
-	scroll-snap-align: start;
+	scroll-snap-align: start; /* magnet for smooth scrolling */
 
 }
 
@@ -129,6 +129,7 @@ footer {
 	padding-bottom: 20px;
 	text-align: right;
 	max-width: 100vwr;
+	scroll-snap-align: start;
 }
 
 
@@ -187,7 +188,7 @@ nav a:hover
 	border-bottom: 3px solid #760001;
 }
 
-/* figures images */
+/* figures images zoom on hover */
 section img:hover
 {
 	-ms-transform: scale(1.2); /* IE 9 */
@@ -200,10 +201,11 @@ section img:hover
 /* dynamic resizing of images */
 
 header img {
-	margin: 50px;
+	
 	display: flex;
 	height: auto;
 	max-width: 80vw;
+	max-height: 80vh;
 }
 section img {
 	max-height: 100px;
@@ -222,7 +224,7 @@ section img {
 
 
 /* media queries */
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1024px)
 {
 	#full_page {
 		max-width: 100vw;
@@ -231,6 +233,7 @@ section img {
 
 	#topsection
 	{
+
 		width: 100vw;
 		font-size: 0.8em;
 		flex-wrap: nowrap;
@@ -246,11 +249,11 @@ section img {
 	}
 	nav ul{
 		justify-content: space-around;
-	padding-right: 15px;
+		padding-right: 15px;
 	}
 	img{
 		size: auto;
-		max-width: 10%;
+		max-width: 30%;
 		margin: 0px;
 		justify-content: center;
 	}
@@ -263,11 +266,41 @@ section img {
 	body h1{
 		font-size: 2em;
 	}
+	.column{
+		padding-top: 25px;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+	.column1{
+		width: 100vw;
+		height: 50vh;
+	}
 	.column2{
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		justify-items: center;
 		text-align: center;
+		width: 100vw;
+		height: 50vh;
+	}
+}
+
+/* j'essaie de regler les bugs lorsqu'en portrait */
+@media screen and (orientation:landscape) and (max-width: 1024px)
+{
+	.column{
+		flex-flow: 1;
+		padding-top: 20px;
+	}
+	#header img{
+
+		margin-top: 100px;
+	}
+	#topsection
+	{
+		flex-direction: column;
+		
 	}
 }
