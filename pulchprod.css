@@ -34,15 +34,19 @@ html {
 	width: 100vw;
 }
 
+/* site is column based : alternatig black and white row for HI 
+then rows with black and white columns for each section.*/
+
+/* main column */
 .column {
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
-
 	scroll-snap-align: start;
 
 }
 
+/* setting column1 for black bg and columns2 for white */
 .column1 {
 	display: flex;
 	align-items: center;
@@ -59,13 +63,29 @@ html {
 	justify-content: center;
 	flex: 1;
 	background-color: whitesmoke;
+	width: 50vw;
 	height: 100vh;
 	color: darkgray;
 }
 
+/* divs for white columns img resizing*/
 .see_desc {
 	display: flex;
 	padding-bottom: 22px;
+
+}
+
+
+#topsection {
+	font-family:'San Francisco', Arial;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	position: fixed;
+	width: 100vw;
+	background-color: whitesmoke;
 
 }
 
@@ -90,9 +110,8 @@ body h1
 {
 	font-family: 'San Francisco', Arial;
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 4em;
 	color:  whitesmoke;
-	background-color: black;
 }
 
 
@@ -109,22 +128,9 @@ footer {
 	margin: 20px;
 	padding-bottom: 20px;
 	text-align: right;
+	max-width: 100vwr;
 }
 
-
-
-#topsection {
-	font-family:'San Francisco', Arial;
-	font-weight: bold;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	position: fixed;
-	width: 100vw;
-	background-color: whitesmoke;
-
-}
 
 /* contact */
 
@@ -218,10 +224,50 @@ section img {
 /* media queries */
 @media screen and (max-width: 1280px)
 {
-	#topsection
-	{
-		background-color: green;
-		width: 100vw;
+	#full_page {
+		max-width: 100vw;
+		margin: 0px;
 	}
 
+	#topsection
+	{
+		width: 100vw;
+		font-size: 0.8em;
+		flex-wrap: nowrap;
+		flex-direction: column;
+
+	}
+
+	#HI column1 {
+		height: 50vh;
+	}
+	#contact{
+		display: none;
+	}
+	nav ul{
+		justify-content: space-around;
+	padding-right: 15px;
+	}
+	img{
+		size: auto;
+		max-width: 10%;
+		margin: 0px;
+		justify-content: center;
+	}
+	
+	body p{
+		font-size: 1em;
+		max-width: 100vw;
+		justify-content: center;
+	}
+	body h1{
+		font-size: 2em;
+	}
+	.column2{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		justify-items: center;
+		text-align: center;
+	}
 }
