@@ -1,8 +1,21 @@
-# html_pulchprod
+# Pulch Productions — Portfolio Website
 
-What is it ?
-  v1 of my site pulch productions, concieved as a hub / business card for my various activities.
-  As my first web project, the goal is to see (and show) what I can achieve with the exclusive use of HTML and CSS.
+A personal portfolio site for **Pulch Productions**, designed as a hub and digital business card.
 
-How to use:
-  Uncompress the zip file and open the .html file inside the folder with any web browser.
+Built with **HTML & CSS only** — no JavaScript, no frameworks, to see what's possible.
+
+## Project Structure
+
+```
+├── index.html           # Main page
+├── css/
+│   ├── base.css         # Fonts, reset, typography
+│   ├── layout.css       # Page structure, columns
+│   ├── components.css   # Nav, contact, header, sections, footer
+│   └── responsive.css   # Media queries
+└── images/              # Assets (logos, icons)
+```
+
+## Getting Started
+
+Open `index.html` in any modern web browser.

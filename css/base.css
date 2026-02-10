@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body h1 {
+  font-family: "San Francisco", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  color: whitesmoke;
+}
+
+body p {
+  color: darkgray;
+  font-size: 2em;
+}

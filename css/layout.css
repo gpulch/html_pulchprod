@@ -1,0 +1,42 @@
+#full_page {
+  font-family: "San Francisco", Arial, sans-serif;
+  font-weight: bold;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100%;
+}
+
+.column {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.column1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: black;
+  width: 50vw;
+  height: 100vh;
+  color: whitesmoke;
+}
+
+.column2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: whitesmoke;
+  width: 50vw;
+  height: 100vh;
+  color: darkgray;
+}
